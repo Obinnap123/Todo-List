@@ -1,0 +1,80 @@
+@use "../style" as *;
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   gap: 5%;
+  height: 100vh;
+}
+.first-rectangle {
+  height: 90vh;
+  width: 320px;
+  border: 3px solid rgba(128, 128, 128, 0.683);
+  border-radius: 30px;
+
+  .first-rectangle-content {
+    display: flex; /* Flex display to control layout */
+    flex-direction: row; /* Stack children vertically */
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 10px;
+    .input {
+      margin-top: 30px;
+      margin-left: 10px;
+      padding: 10px 10px;
+      border-radius: 10px;
+      width: 50%;
+    }
+    .button-icon {
+      display: flex;
+      gap: 10px;
+      .button {
+        margin-top: 35px;
+        padding: 6px 20px;
+        background-color: green;
+        color: white;
+        border: none;
+        // width: 20%;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      i {
+        margin-top: 37px;
+        font-size: 22px;
+        color: rgba(128, 128, 128, 0.683);
+        // margin-right: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  .second-rectangle {
+    margin: 25px auto 0;
+    padding: 10px;
+    height: 65vh;
+    width: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.683);
+    border-radius: 15px;
+    border-bottom: 0;
+    .third-rectangle {
+      border: 1px solid #000; /* Adjust the color as needed */
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 8px; /* Space between tasks */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .delete-btn {
+        background-color: #ff4d4d; /* A red background for visibility */
+        color: #fff;
+        border: none;
+        padding: 5px 20px;
+        cursor: pointer;
+        border-radius: 15px; /* Optional: rounded corners */
+        &:hover {
+          background-color: #ff3333; /* Darken on hover */
+        }
+      }
+    }
+  }
+}
