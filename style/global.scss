@@ -14,7 +14,7 @@ body {
   border: 3px solid rgba(128, 128, 128, 0.683);
   border-radius: 30px;
   @include Mobile {
-    height: 80vh;
+    height: 90vh;
     width: 270px;
     border: 3px solid rgba(128, 128, 128, 0.683);
     border-radius: 30px;
@@ -69,7 +69,7 @@ body {
     border-radius: 15px;
     border-bottom: 0;
     @include Mobile {
-      height: 50vh;
+      height: 60vh;
       width: 250px;
     }
     .third-rectangle {

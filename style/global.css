@@ -20,7 +20,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .first-rectangle {
-    height: 80vh;
+    height: 90vh;
     width: 270px;
     border: 3px solid rgba(128, 128, 128, 0.683);
     border-radius: 30px;
@@ -80,7 +80,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .first-rectangle .second-rectangle {
-    height: 50vh;
+    height: 60vh;
     width: 250px;
   }
 }
