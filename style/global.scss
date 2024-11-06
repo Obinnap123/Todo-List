@@ -13,11 +13,10 @@ body {
   width: 320px;
   border: 3px solid rgba(128, 128, 128, 0.683);
   border-radius: 30px;
+  // overflow-y: auto;
   @include Mobile {
     height: 90vh;
     width: 270px;
-    border: 3px solid rgba(128, 128, 128, 0.683);
-    border-radius: 30px;
   }
   .first-rectangle-content {
     display: flex; /* Flex display to control layout */

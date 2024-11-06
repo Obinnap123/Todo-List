@@ -1,4 +1,3 @@
-
 const taskInput = document.querySelector(".input");
 
 // Function to add a new task
@@ -22,7 +21,7 @@ function addTask() {
     newTaskDiv.appendChild(deleteButton);
     document.querySelector(".second-rectangle").appendChild(newTaskDiv);
 
-    taskInput.value = ""; 
+    taskInput.value = "";
   }
 }
 
@@ -34,4 +33,8 @@ taskInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     addTask();
   }
+});
+document.querySelector("i").addEventListener("click", () => {
+  const divRemover = document.querySelectorAll(".third-rectangle");
+  divRemover.forEach((newTaskDiv) => newTaskDiv.remove());
 });
