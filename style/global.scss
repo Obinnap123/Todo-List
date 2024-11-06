@@ -4,21 +4,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  //   gap: 5%;
+
   height: 100vh;
+  overflow: hidden;
 }
 .first-rectangle {
   height: 90vh;
   width: 320px;
   border: 3px solid rgba(128, 128, 128, 0.683);
   border-radius: 30px;
-
+  @include Mobile {
+    height: 80vh;
+    width: 270px;
+    border: 3px solid rgba(128, 128, 128, 0.683);
+    border-radius: 30px;
+  }
   .first-rectangle-content {
     display: flex; /* Flex display to control layout */
     flex-direction: row; /* Stack children vertically */
     align-items: flex-start;
     gap: 30px;
     margin-top: 10px;
+    @include Mobile {
+      gap: 20px;
+    }
     .input {
       margin-top: 30px;
       margin-left: 10px;
@@ -38,6 +47,9 @@ body {
         // width: 20%;
         border-radius: 4px;
         cursor: pointer;
+        @include Mobile {
+          padding: 6px 15px;
+        }
       }
       i {
         margin-top: 37px;
@@ -56,6 +68,10 @@ body {
     border: 1px solid rgba(128, 128, 128, 0.683);
     border-radius: 15px;
     border-bottom: 0;
+    @include Mobile {
+      height: 50vh;
+      width: 250px;
+    }
     .third-rectangle {
       border: 1px solid #000; /* Adjust the color as needed */
       border-radius: 5px;

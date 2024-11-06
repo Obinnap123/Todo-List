@@ -9,6 +9,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .first-rectangle {
@@ -17,12 +18,25 @@ body {
   border: 3px solid rgba(128, 128, 128, 0.683);
   border-radius: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .first-rectangle {
+    height: 80vh;
+    width: 270px;
+    border: 3px solid rgba(128, 128, 128, 0.683);
+    border-radius: 30px;
+  }
+}
 .first-rectangle .first-rectangle-content {
   display: flex; /* Flex display to control layout */
   flex-direction: row; /* Stack children vertically */
   align-items: flex-start;
   gap: 30px;
   margin-top: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .first-rectangle .first-rectangle-content {
+    gap: 20px;
+  }
 }
 .first-rectangle .first-rectangle-content .input {
   margin-top: 30px;
@@ -44,6 +58,11 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+  .first-rectangle .first-rectangle-content .button-icon .button {
+    padding: 6px 15px;
+  }
+}
 .first-rectangle .first-rectangle-content .button-icon i {
   margin-top: 37px;
   font-size: 22px;
@@ -58,6 +77,12 @@ body {
   border: 1px solid rgba(128, 128, 128, 0.683);
   border-radius: 15px;
   border-bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+  .first-rectangle .second-rectangle {
+    height: 50vh;
+    width: 250px;
+  }
 }
 .first-rectangle .second-rectangle .third-rectangle {
   border: 1px solid #000; /* Adjust the color as needed */
