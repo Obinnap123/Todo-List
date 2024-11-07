@@ -13,9 +13,12 @@ body {
   width: 320px;
   border: 3px solid rgba(128, 128, 128, 0.683);
   border-radius: 30px;
-  // overflow-y: auto;
+  display: flex; /* Flex display to control layout */
+  flex-direction: column; /* Stack children vertically */
+  padding-bottom: 20px;
+
   @include Mobile {
-    height: 90vh;
+    // height: 90vh;
     width: 270px;
   }
   .first-rectangle-content {
@@ -62,13 +65,13 @@ body {
   .second-rectangle {
     margin: 25px auto 0;
     padding: 10px;
-    height: 65vh;
+    height: 100%;
     width: 300px;
     border: 1px solid rgba(128, 128, 128, 0.683);
     border-radius: 15px;
     border-bottom: 0;
+    overflow-y: auto;
     @include Mobile {
-      height: 60vh;
       width: 250px;
     }
     .third-rectangle {
